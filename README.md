@@ -1,5 +1,5 @@
 # Flight-Chatbot
-This is Pyan Tan Lyk - ပျံသန်းလိုက် Flight Chat Bot.
+This is Pyan Tan Lyk - ပျံသန်းလိုက် Flight Chat Bot with is collobrated with our SkyPalss Java Project.
 
 ![Image](https://github.com/user-attachments/assets/25f36a08-0d46-4006-b9cf-d233afc7b9c5)
 
