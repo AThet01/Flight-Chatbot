@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Load Google API Key
-GOOGLE_API_KEY = os.getenv("AIzaSyDRjFJc--C1sXIefshnPLXlRMateQu2gc8")  # Ensure API key is stored securely
+GOOGLE_API_KEY = os.getenv("AIzaSyDX_av4gVkS4boaEZkEET5tBfkwtoZdChE")  # Ensure API key is stored securely
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel('gemini-2.0-flash')
 
