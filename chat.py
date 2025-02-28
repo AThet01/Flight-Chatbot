@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Load Google API Key
-GOOGLE_API_KEY = os.getenv("")  # Ensure API key is stored securely
+GOOGLE_API_KEY = os.getenv("AIzaSyDX_av4gVkS4boaEZkEET5tBfkwtoZdChE")  # Ensure API key is stored securely
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel('gemini-2.0-flash')
 
@@ -22,10 +22,13 @@ model = gen_ai.GenerativeModel('gemini-2.0-flash')
 AIRLINE_INFO = """
 Here are some airlines operating within Myanmar:
 
-1️⃣ **MAI**: Myanmar Airways International  
-2️⃣ **Air Mandalay**  
-3️⃣ **Myanmar National Airlines (MNA)**  
-4️⃣ **Air KBZ**  
+1️⃣ Myanmar Airways International (MAI) ✈️
+2️⃣ Air Mandalay 🛫
+3️⃣ Myanmar National Airlines (MNA) 🇲🇲✈️
+4️⃣ Air KBZ 🌍🛩️
+5️⃣ Air Thanlwin 🕊️✈️
+6️⃣ Asian Wings Airways 🦅✈️
+
 """
 
 SEAT_TYPE_INFO = """
@@ -68,7 +71,7 @@ TRAVEL_ADVICE = """
 def match_prompt(user_query):
     query = user_query.lower()
 
-    if any(keyword in query for keyword in ["airlines", "airline"]):
+    if any(keyword in query for keyword in ["airlines", "airline","airlines in Myanmar"]):
         return AIRLINE_INFO
     elif any(keyword in query for keyword in ["seat", "available", "seat types"]):
         return SEAT_TYPE_INFO
